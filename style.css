@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.container{
+  display: flex;
+  flex: 1/2;
+}
+.menu{
+  width: 25rem;
+  height: 100vh;
+  background-color: #000;
+}
+.nav{
+  list-style: none;
+}
+.nav li{
+  padding: 1.5rem 2rem;
+}
+.nav li:hover{
+  background-color: #ccc;
+}
+.nav li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+.content{
+  padding: 0 10rem;
+  text-align: center;
+}
+.icon{
+  width: 100%;
+  padding: 2rem 0;
+}
+img{
+  height: 7rem;
+}
+.lorem{
+  background-color: #ccc;
+  padding: 3rem 20rem;
+}
+.lorem-column{
+  display: flex;
+  padding: 2rem 0;
+  text-align: left;
+  gap: 1.5rem;
+}
+.lorem-column img{
+  float: left;
+}
+.copyright{
+  float: left;
+}
+@media (min-width:1008px){
+  .container{
+    width: 100%;
+  }
+}
+@media (min-width: 640px) and (max-width:1008px){
+  .content{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  .lorem{
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 414px) and (max-width: 640px){
+  .menu{
+    height: 115vh;
+    background-color: #000;
+  }
+  .content{
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .lorem{
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 413px){
+  .menu{
+    width: 70px;
+    height: 110vh;
+  }
+  .nav li a{
+    font-size: 1rem;
+  }
+  .content{
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  .lorem{
+    padding: 0 1rem;
+  }
+}
